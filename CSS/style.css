@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.header {}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav {
+    margin-right: 30px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #2c2c2c;
+    display: block;
+    padding: 28px 0;
+    
+}
+
+.nav-link:hover
+.nav-link:focus {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #bbf330;
+}
+
+.main-btn {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: right;
+    border-radius: 30px;
+    padding: 6px 17px;
+    width: 98px;
+    height: 32px;
+    background-color: #bbf330;
+    border: none;
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero {}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.hero-txt {
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.main-btn {}
+
+.hero-wrapper {
+    max-width: 511px;
+}
+
+.offering {
+    padding-top: 113px;
+    padding-bottom: 124px ;
+    background-color: #ffe550;
+}
+
+.offering title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offering-wrapper {
+    max-width: 573px;
+}
+
+.offering-txt {
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.offering-list {
+    display: flex;
+    gap: 67px;
+}
+
+.offering-list-item {
+    width: calc();
+}
+
