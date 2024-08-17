@@ -27,6 +27,7 @@ body {
     margin: 0 auto;
 }
 
+/* #region header */
 .header {}
 
 .logo {
@@ -35,6 +36,8 @@ body {
 
 .nav {
     margin-right: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -43,14 +46,13 @@ body {
 }
 
 .nav-link {
+    display: block;
     font-size: 14px;
     color: #2c2c2c;
-    display: block;
     padding: 28px 0;
-    
 }
 
-.nav-link:hover
+.nav-link:hover,
 .nav-link:focus {
     font-weight: 700;
     text-decoration: underline;
@@ -61,22 +63,27 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-    text-align: right;
     border-radius: 30px;
-    padding: 6px 17px;
-    width: 98px;
+    min-width: 98px;
     height: 32px;
     background-color: #bbf330;
     border: none;
     cursor: pointer;
+    margin-left: 30px;
+    margin-right: 16px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
 }
+/* #endregion header */
 
-.hero {}
+/* #region hero */
+.hero {
+    padding-top: 14px;
+    padding-bottom: 69px;
+}
 
 .hero-title {
     font-size: 48px;
@@ -84,35 +91,47 @@ body {
     margin-bottom: 28px;
 }
 
-.hero-txt {
-    line-height: 1.5;
-    font-size: 16px;
-    margin-bottom: 40px;
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 143px;
 }
 
-.main-btn {}
+.hero-txt {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
 
 .hero-wrapper {
     max-width: 511px;
 }
+/* #endregion hero */
 
+/* #region offering */
 .offering {
-    padding-top: 113px;
-    padding-bottom: 124px ;
+    padding-top: 133px;
+    padding-bottom: 124px;
     background-color: #ffe550;
 }
 
-.offering title {
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 20px;
+.offering .container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
 }
 
 .offering-wrapper {
     max-width: 573px;
 }
 
-.offering-txt {
+.offering-title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.offering-text {
     line-height: 1.5;
     margin-bottom: 40px;
 }
@@ -120,9 +139,54 @@ body {
 .offering-list {
     display: flex;
     gap: 67px;
+    margin-bottom: 32px;
 }
 
 .offering-list-item {
-    width: calc();
+    width: calc((100% - 67px) / 2);
 }
 
+.about-us {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.about-us-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.offering-btn {
+    border: 2px solid #7eb101;
+    background-color: #fff;
+}
+/* #endregion offering */
+
+/* #region our-favorites */
+.our-favorites {
+    padding-top: 120px;
+    padding-bottom: 101px;
+}
+
+.our-favorites-title {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-favorites-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.dishes-list {
+    width: calc((100% - 64px) / 3);
+}
+/* #endregion our-favorites */
